@@ -11,6 +11,11 @@
 function isEmptyString(string) {
   let result;
   // Add your code here.
+  if (string === ""){
+    result = true;
+  } else {
+    result = false;
+  }
   return result;
 }
 
@@ -40,6 +45,12 @@ console.log(isEmptyString(" ") === false);
 function containsWordJava(text) {
   let result;
   // Add your code here.
+  let text2 = text.toLowerCase()
+  if(text2.includes('java')) {
+    result = true;
+  } else {
+    result = false;
+  }
   return result;
 }
 
@@ -69,6 +80,10 @@ console.log(containsWordJava("JAVA IS FUN :D") === true);
 
 function trimSentence(text, maxLength) {
   // Add your code here.
+  let newlength = maxLength - 3
+  if (text.length > newlength) {
+    return text.slice(0,newlength) + "..."
+  }
   return text;
 }
 
@@ -100,6 +115,10 @@ console.log(trimSentence("Short", 16) === "Short");
 
 function trimSentence(text, maxLength) {
   // Add your code here.
+  let newlength = maxLength - 3
+  if (text.length > newlength) {
+    return text.slice(0,newlength) + "..."
+  }
   return text;
 }
 
